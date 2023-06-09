@@ -34,13 +34,13 @@ namespace WindowsFormsApp1
             perimeter = side1 + side2 + side3;
             
 
-            s = perimeter / 2;
+            s = perimeter / 2; //to use heron's formula you need the semiperimeter
 
-            area = Math.Sqrt(s * (s - side1) * (s - side2) * (s - side3));
+            area = Math.Sqrt(s * (s - side1) * (s - side2) * (s - side3)); //heron's formula
 
             if (area == 0)
             {
-                textBox4.Text = ("invalid triangle");
+                textBox4.Text = ("invalid triangle"); //for if user inputs side lengths that don't make a triangle
                 textBox5.Text = ("invalid triangle");
             }
             else

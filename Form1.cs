@@ -24,11 +24,11 @@ namespace WindowsFormsApp1
             int perimeter;
             int area;
 
-            length = Convert.ToInt32(textBox1.Text);
+            length = Convert.ToInt32(textBox1.Text); //takes input values and assigns to variables
             width = Convert.ToInt32(textBox2.Text);
             perimeter = (length * 2) + (width * 2);
-            area = length * width;
-            textBox4.Text = perimeter.ToString();
+            area = length * width;                  //calculates area
+            textBox4.Text = perimeter.ToString();   //fills out text fields
             textBox3.Text = area.ToString();
         }
 
@@ -59,7 +59,7 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox1.Clear();
+            textBox1.Clear();   //wipes text fields so new inputs can be made
             textBox2.Clear();
             textBox3.Clear();
             textBox4.Clear();

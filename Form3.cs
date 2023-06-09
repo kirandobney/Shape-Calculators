@@ -25,13 +25,13 @@ namespace WindowsFormsApp1
             double circumference;
             double area;
 
-            radius = Convert.ToInt32(textBox1.Text);
+            radius = Convert.ToInt32(textBox1.Text); //only user input you need is radius
             diameter = radius * 2;
 
-            circumference = diameter * 3.14;
+            circumference = diameter * 3.14; //formula for circle circumference
             textBox2.Text = circumference.ToString();
 
-            area = (3.14) * radius * radius;
+            area = (3.14) * radius * radius; //formula for circle area
             textBox3.Text = area.ToString();
 
 
